@@ -42,7 +42,7 @@ body {
   /* display: grid;
   grid-template-columns: 1fr;
   gap: 1.2rem; */
-  box-shadow: -1px 1px 51px 2px rgba(0,0,0,0.56);
+  box-shadow: -1px 1px 51px 2px rgba(0, 0, 0, 0.56);
   border-radius: 17px 17px 17px 17px;
 
   display: flex;
@@ -81,6 +81,10 @@ body {
   justify-content: center;
 
   font-size: 1.8rem;
+}
+
+.circle-active {
+  display: none;
 }
 
 .dates {

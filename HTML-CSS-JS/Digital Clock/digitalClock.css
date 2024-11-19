@@ -1,5 +1,131 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid #555; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* background: rgb(136, 96, 25); */
+  background: linear-gradient(
+    235deg,
+    rgba(136, 96, 25, 1) 25%,
+    rgba(121, 40, 91, 1) 50%,
+    rgba(130, 23, 52, 1) 75%
+  );
+
+  height: 90vh;
+}
+
+.container {
+  width: 72rem;
+  margin: 25vh auto;
+  padding: 1.2rem;
+  /* border: 5px solid black; */
+  /* background: rgb(25, 136, 103); */
+  background: linear-gradient(
+    235deg,
+    rgba(25, 136, 103, 1) 25%,
+    rgba(40, 80, 121, 1) 50%,
+    rgba(39, 108, 123, 1) 75%
+  );
+  /* display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem; */
+  box-shadow: -1px 1px 51px 2px rgba(0,0,0,0.56);
+  border-radius: 17px 17px 17px 17px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.hour,
+.minute,
+.second {
+  height: 6.4rem;
+  width: 6.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3.8rem;
+  font-family: "Orbitron", sans-serif;
+}
+
+.seperator {
+  height: 2.4rem;
+  width: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8rem;
+}
+
+.dates {
+  padding: 1.2rem;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* height: 4.8rem; */
+  /* width: 5.2rem; */
+
+  padding: 1.2rem;
+  font-size: 2.2rem;
+  font-family: "Lobster", sans-serif;
+}
+
+.date {
+  display: flex;
+  /* gap: 1.2rem; */
+}
+
+.curr-date,
+.curr-month,
+.curr-year {
+  /* height: 4.8rem; */
+  /* width: 4.8rem; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.2rem;
+  font-size: 2.2rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.dash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
 }

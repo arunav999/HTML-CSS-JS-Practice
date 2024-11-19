@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Clock</title>
-
     <link rel="stylesheet" href="digitalClock.css" />
+    <script defer src="digitalClock.js"></script>
+
+    <title>Digital Clock</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <section class="clock">
+        <div class="hour">12</div>
+        <div class="seperator">
+          <div>&#9679;</div>
+          <div>&#9679;</div>
+        </div>
+        <div class="minute">30</div>
+        <div class="seperator">
+          <div>&#9679;</div>
+          <div>&#9679;</div>
+        </div>
+        <div class="second">55</div>
+      </section>
+
+      <section class="dates">
+        <div class="day">Monday</div>
+        <div class="date">
+          <div class="curr-date">10</div>
+          <div class="dash">/</div>
+          <div class="curr-month">Sep</div>
+          <div class="dash">/</div>
+          <div class="curr-year">2021</div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
